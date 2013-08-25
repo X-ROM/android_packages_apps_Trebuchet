@@ -14,7 +14,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="menu">Menù</string>
+    <string name="application_copyright">Copyright \u00A9 2013 The CyanogenMod Project</string>
+    <string name="menu">Menu</string>
     <string name="cancel_target_label">Cancella</string>
     <string name="edit_target_label">Modifica</string>
     <string name="menu_lock_workspace">Blocca schermata Home</string>
@@ -101,7 +102,7 @@
     <string name="preferences_interface_dock_pages_title">Pagine</string>
     <string name="preferences_interface_dock_pages_summary">Numero di pagine nella barra dock</string>
     <string name="preferences_interface_dock_default_page_title">Pagina predefinita</string>
-    <string name="preferences_interface_dock_default_page_summary">Pagina che viene mostrata di default</string>
+    <string name="preferences_interface_dock_default_page_summary">Pagina che viene mostrata in modo predefinito</string>
     <string name="preferences_interface_dock_icons_title">Icone</string>
     <string name="preferences_interface_dock_icons_summary">Numero di icone/colonne nella barra dock</string>
     <string name="preferences_interface_dock_hide_icon_labels_title">Nascondi etichette</string>
@@ -117,6 +118,7 @@
     <string name="preferences_interface_general_lock_workspace_summary">Blocca le scorciatoie e la posizione delle cartelle nella schermata Home, dock e drawer applicazioni e widget</string>
     <string name="preferences_interface_general_fullscreen_title">Modalità schermo intero</string>
     <string name="preferences_interface_general_fullscreen_summary">Nascondi la barra di stato per estendere la schermata Home</string>
+    <string name="folder_empty_contents_title">Nessun elemento trovato</string>
     <string name="effects_standard">Predefinito</string>
     <string name="effects_tablet">Tablet</string>
     <string name="effects_zoom_in">Riduci</string>
@@ -133,4 +135,6 @@
     <string name="effects_accordion">Fisarmonica</string>
     <string name="effects_carousel_left">Carosello sinistra</string>
     <string name="effects_carousel_right">Carosello destra</string>
+    <string name="live_folder_cling_title">Live folder</string>
+    <string name="live_folder_cling_create_folder">Le \'Live folder\' consentono agli sviluppatori di app la creazione di cartelle con contenuti dinamici. Il contenuto della cartella può essere rimosso con una pressione prolungata su una singola voce. A differenza delle normali cartelle, gli elementi possono essere aggiunti solo dall\'applicazione che ha creato la cartella</string>
 </resources>
