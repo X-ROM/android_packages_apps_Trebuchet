@@ -1,7 +1,6 @@
 package com.cyanogenmod.trebuchet;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import org.cyanogenmod.support.ui.LiveFolder;
 
@@ -26,7 +25,6 @@ import android.text.TextUtils;
 class LiveFolderInfo extends FolderInfo {
 
     ComponentName receiver;
-    long lastUpdate;
     Intent.ShortcutIconResource iconResource;
 
     LiveFolderInfo() {
@@ -46,13 +44,9 @@ class LiveFolderInfo extends FolderInfo {
     }
 
     public void removeAll() {
-        Iterator<ShortcutInfo> iter = contents.iterator();
-        while (iter.hasNext()) {
-            ShortcutInfo info = iter.next();
-            iter.remove();
-            for (FolderListener listener : listeners) {
-                listener.onRemove(info);
-            }
+        contents.clear();
+        for (FolderListener listener : listeners) {
+            listener.onAllItemsRemoved();
         }
         itemsChanged();
     }
@@ -72,7 +66,6 @@ class LiveFolderInfo extends FolderInfo {
     }
 
     public void populateWithItems(Context ctx, ArrayList<LiveFolder.Item> items) {
-        lastUpdate = System.currentTimeMillis();
         removeAll();
         Bitmap icon = null;
         for (LiveFolder.Item item : items) {
