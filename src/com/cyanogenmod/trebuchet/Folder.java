@@ -1151,6 +1151,13 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
         }
     }
 
+    public void onAllItemsRemoved() {
+        mItemsInvalidated = true;
+        mContent.removeAllViews();
+        setupContentForNumItems(getItemCount());
+        replaceFolderWithFinalItem();
+    }
+
     private View getViewForInfo(ShortcutInfo item) {
         for (int j = 0; j < mContent.getCountY(); j++) {
             for (int i = 0; i < mContent.getCountX(); i++) {
