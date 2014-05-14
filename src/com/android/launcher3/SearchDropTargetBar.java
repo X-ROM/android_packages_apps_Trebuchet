@@ -242,4 +242,9 @@ public class SearchDropTargetBar extends FrameLayout implements DragController.D
             return null;
         }
     }
+        
+        public View getDropTargetBar() {
+        return mDropTargetBar;
+    }
+
 }
